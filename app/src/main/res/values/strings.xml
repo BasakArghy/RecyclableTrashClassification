@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Recyclable Trash Classification App</string>
+    <string name="open">Open Navigation Drawer</string>
+    <string name="close">Close Navigation Drawer</string>
+</resources>

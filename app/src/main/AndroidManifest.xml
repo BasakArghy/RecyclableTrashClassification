@@ -5,46 +5,105 @@
     <uses-permission
         android:name="android.permission.CAMERA"
         tools:ignore="PermissionImpliesUnsupportedChromeOsHardware" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@drawable/cycle"
+        android:icon="@drawable/app_logo"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/cycle"
+        android:roundIcon="@drawable/app_logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.RecyclableTrashClassificationApp"
         tools:targetApi="31">
         <activity
-            android:name=".ReadMore"
-            android:exported="false"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+            android:name=".TransactionHistoryActivity"
+            android:exported="false" />
         <activity
-            android:name=".Confidences"
+            android:name=".MapView"
+            android:exported="false" />
+        <activity
+            android:name=".MessageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CollectorProfilesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DealerProfilesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DealerFromView"
+            android:exported="false" />
+        <activity
+            android:name=".DealerApplicationsView"
+            android:exported="false" />
+        <activity
+            android:name=".AdminPanel"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCz360B1bCgBy5Vvb_BeAqZht6ZbWGwquA" />
+
+        <activity
+            android:name=".ApplyAsDealer"
+            android:exported="false" />
+        <activity
+            android:name=".ChangeProfilePic"
+            android:exported="false" />
+        <activity
+            android:name=".Help"
+            android:exported="false" />
+        <activity
+            android:name=".EditImageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FormView"
+            android:exported="false" />
+        <activity
+            android:name=".ApplyForPermit"
+            android:exported="false" />
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".Administration"
+            android:exported="false" />
+        <activity
+            android:name=".SignupScreen"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
         <activity
-            android:name=".History"
-            android:exported="false"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
-        <activity
-            android:name=".About"
-            android:exported="false"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
-        <activity
-            android:name=".Settings"
-            android:exported="false"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
-        <activity
-            android:name=".SignUpActivity"
-            android:exported="true">
+            android:name=".LoginScreen"
+            android:exported="true"
+            android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ReadMore"
+            android:exported="false" />
+        <activity android:name="com.yalantis.ucrop.UCropActivity" />
+        <activity
+            android:name=".Confidences"
+            android:exported="false" />
+        <activity
+            android:name=".History"
+            android:exported="false" />
+        <activity
+            android:name=".Reclycle_Process"
+            android:exported="false" />
+        <activity
+            android:name=".Settings"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />

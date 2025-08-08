@@ -65,7 +65,7 @@ public class Settings extends AppCompatActivity {
         prefs = getSharedPreferences("settings_prefs", MODE_PRIVATE);
 
         // === Switches ===
-        switchNotifications = findViewById(R.id.switch_notifications);
+       // switchNotifications = findViewById(R.id.switch_notifications);
         switchTheme = findViewById(R.id.switch_theme);
 
         // Load saved preferences

@@ -7,6 +7,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
@@ -78,6 +79,13 @@ if(itemIndex!= -1){
                 // Log error or notify user
                 Log.e("Firestore", "Failed to load recycling process data", e);
             });
+title.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+        Intent intent = new Intent(ReadMore.this,Confidences.class);
+        startActivity(intent);
+    }
+});
 
 
 }
